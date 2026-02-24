@@ -1,17 +1,39 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <title>StreamVault — Videos, Music, Gallery & Podcasts</title>
-    <meta name="description" content="StreamVault - Modern streaming platform for videos, music, gallery and podcasts" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
-    <script src="https://www.youtube.com/iframe_api"></script>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <!-- Clean Viewport (remove max-scale block) -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Primary SEO -->
+  <title>SK Video Player – Stream Videos, Music & Podcasts Online</title>
+  <meta name="description" content="SK Video Player is a modern streaming web app to watch videos, listen to music and stream podcasts seamlessly." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://sk-video-player.vercel.app/" />
+
+  <!-- Theme Color -->
+  <meta name="theme-color" content="#111827" />
+
+  <!-- Performance: Preconnect for Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <!-- Optimized Font Loading -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Defer YouTube API (DO NOT block rendering) -->
+  <script defer src="https://www.youtube.com/iframe_api"></script>
+
+</head>
+<body>
+  <div id="root"></div>
+
+  <!-- React Entry -->
+  <script type="module" src="/src/main.tsx"></script>
+</body>
 </html>
